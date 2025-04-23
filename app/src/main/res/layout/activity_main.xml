@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="24dp"
+android:background="#121212"
+tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Calculadora de Reajuste Salarial"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="32dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Salário Atual:"
+    android:textSize="16sp"
+    android:textColor="#B3B3B3"
+    android:layout_marginBottom="4dp"/>
+
+<EditText
+    android:id="@+id/editTextSalario"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="R$ 0.00"
+    android:inputType="numberDecimal"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#535353"
+    android:backgroundTint="#535353"
+    android:paddingVertical="12dp"
+    android:layout_marginBottom="24dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Selecione o percentual de aumento:"
+    android:textSize="16sp"
+    android:textColor="#B3B3B3"
+    android:layout_marginBottom="8dp"/>
+
+<RadioGroup
+    android:id="@+id/radioGroupPercentual"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="32dp">
+
+    <RadioButton
+        android:id="@+id/radio40Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:buttonTint="#1DB954"/>
+
+    <RadioButton
+        android:id="@+id/radio45Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45%"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:buttonTint="#1DB954"/>
+
+    <RadioButton
+        android:id="@+id/radio50Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:buttonTint="#1DB954"/>
+</RadioGroup>
+
+<Button
+    android:id="@+id/buttonCalcularReajuste"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Calcular Reajuste"
+    android:layout_gravity="center_horizontal"
+    android:backgroundTint="#1DB954"
+    android:textColor="#121212"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:paddingHorizontal="40dp"
+    android:paddingVertical="14dp"/>
+
+<TextView
+    android:id="@+id/textViewResultado"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="18sp"
+    android:textColor="#1DB954"
+    android:textStyle="bold"
+    android:layout_marginTop="32dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>
